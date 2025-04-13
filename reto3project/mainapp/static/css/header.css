@@ -1,0 +1,54 @@
+.site-header {
+    background-color: #080e20;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    font-family: sans-serif;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: bold;
+  }
+  
+  .logo img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .main-nav {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .main-nav a {
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .main-nav a:hover {
+    color: white;
+  }
+  
+  .icons {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .icons .icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    filter: brightness(0.9);
+    transition: filter 0.2s ease;
+  }
+  
+  .icons .icon:hover {
+    filter: brightness(1.2);
+  }

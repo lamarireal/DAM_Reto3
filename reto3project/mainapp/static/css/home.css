@@ -1,0 +1,21 @@
+/* Убедись, что html и body занимают всю высоту */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #542398;
+    color: white;
+    font-family: sans-serif;
+  }
+  
+  /* Обертка, которая держит всё кроме футера */
+  .wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Контент растягивается, чтобы футер был внизу */
+  .content {
+    flex: 1;
+  }

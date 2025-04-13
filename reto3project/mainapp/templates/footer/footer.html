@@ -1,3 +1,21 @@
-<footer>
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/footer.css' %}">
+
+<footer class="site-footer">
+  <div class="footer-left">
+    <a href="#">Política de Privacidad</a>
+    <a href="#">Términos de uso</a>
+    <a href="#">Cookies</a>
+    <a href="#">Ayuda</a>
+  </div>
+  <div class="footer-center">
     <p>© 2025 All rights reserved</p>
+  </div>
+  <div class="footer-right">
+    <a href="#"><img src="{% static 'images/footer/facebook.png' %}" alt="Facebook"></a>
+    <a href="#"><img src="{% static 'images/footer/twitter.png' %}" alt="Twitter"></a>
+    <a href="#"><img src="{% static 'images/footer/instagram.png' %}" alt="Instagram"></a>
+    <a href="#"><img src="{% static 'images/footer/github.png' %}" alt="GitHub"></a>
+  </div>
 </footer>
