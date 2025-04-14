@@ -1,54 +1,91 @@
 .site-header {
-    background-color: #080e20;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 2rem;
-    font-family: sans-serif;
-  }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-weight: bold;
-  }
-  
-  .logo img {
-    width: 24px;
-    height: 24px;
-  }
-  
-  .main-nav {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .main-nav a {
-    color: #ccc;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  
-  .main-nav a:hover {
-    color: white;
-  }
-  
-  .icons {
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-  }
-  
-  .icons .icon {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    filter: brightness(0.9);
-    transition: filter 0.2s ease;
-  }
-  
-  .icons .icon:hover {
-    filter: brightness(1.2);
-  }
+  background-color: #080e20;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  font-family: sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.logo:hover {
+  transform: translateX(5px);
+  color: #00bfff;
+}
+
+.logo img {
+  width: 30px;
+  height: 30px;
+}
+
+.main-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.main-nav a {
+  color: #ccc;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.main-nav a::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #00bfff;
+  transition: width 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: white;
+  transform: translateY(-2px);
+}
+
+.main-nav a:hover::after {
+  width: 100%;
+}
+
+.icons {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.icons .icon {
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  filter: brightness(0.9);
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.icons .icon:hover {
+  filter: brightness(1.2);
+  transform: scale(1.15);
+}
+
+.logo span {
+  color: white;
+  text-decoration: none;
+  pointer-events: none;
+}

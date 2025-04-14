@@ -18,5 +18,10 @@
         <!-- Footer -->
         {% include "footer/footer.html" %}
     </div>
+    <script src="{% static 'js/header.js' %}"></script>
+    <script src="{% static 'js/footer.js' %}"></script>
+    {% block scripts %}{% endblock %}
+    
 </body>
+
 </html>

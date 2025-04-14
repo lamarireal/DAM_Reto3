@@ -3,12 +3,12 @@
 <link rel="stylesheet" href="{% static 'css/header.css' %}">
 
 <header class="site-header">
-  <div class="logo">
+  <a href="{% url 'home' %}" class="logo">
     <img src="{% static 'images/header/logo.png' %}" alt="Logo">
     <span>PC Builder</span>
-  </div>
+  </a>
   <nav class="main-nav">
-    <a href="#">Inicio</a>
+    <a href="{% url 'home' %}">Inicio</a>
     <a href="#">Comparador</a>
     <a href="#">Configurador</a>
     <a href="#">Guías</a>
